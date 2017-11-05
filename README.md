@@ -1,7 +1,7 @@
 # 8ball - React
 
 This is my 8ball clone to learn about atomic design, react and redux.
-I bootstrapped this app using [arc](https://arc.js.org).
+I bootstrapped it using [arc](https://arc.js.org).
 
 [Here you can find a preview](http://8ball.mattianatali.it/)
 

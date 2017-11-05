@@ -4,12 +4,13 @@ import styled, { css } from 'styled-components'
 import Link from 'react-router-dom/Link'
 import { font, palette } from 'styled-theme'
 import { ifProp } from 'styled-tools'
+import { transitionColors } from '../../themes/utils'
 
 const fontSize = ({ height }) => `${height / 40}rem`
 
 const backgroundColor = ({ disabled }) => palette('background', disabled ? 2 : 0)
 
-const foregroundColor = ({ disabled }) => palette('foreground', disabled ? 2 : 0, true)
+const foregroundColor = ({ disabled }) => palette('foreground', disabled ? 2 : 0)
 
 const hoverBackgroundColor = palette('foreground', 0)
 const hoverForegroundColor = palette('background', 0)
@@ -33,6 +34,7 @@ const styles = css`
   transition: background-color 250ms ease-out, color 250ms ease-out, border-color 250ms ease-out;
   background-color: ${backgroundColor};
   color: ${foregroundColor};
+  ${transitionColors}
 
   &:hover, &:active {
     background-color: ${hoverBackgroundColor};

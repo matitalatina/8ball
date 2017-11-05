@@ -3,6 +3,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { size, palette } from 'styled-theme'
+import { transitionColors } from '../../themes/utils'
 
 const Wrapper = styled.div`
   display: flex;
@@ -10,7 +11,8 @@ const Wrapper = styled.div`
   min-height: 100vh;
   box-sizing: border-box;
   background-color: ${palette('background', 0)};
-  color: ${palette('foreground', 0)},
+  color: ${palette('foreground', 0)};
+  ${transitionColors}
 `
 
 const Header = styled.header`

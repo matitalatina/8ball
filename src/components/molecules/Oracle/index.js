@@ -14,7 +14,7 @@ const Oracle = ({ response, onAnswer }) => {
   return (
     <Wrapper>
       <Wow>{response}</Wow>
-      <Spacer size={2} />
+      <Spacer size={5} />
       <Button onClick={onAnswer}>Rispondi</Button>
     </Wrapper>
   )

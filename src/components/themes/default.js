@@ -35,7 +35,16 @@ theme.availableAccents = [
   { foreground: ['#03a0b8'], background: ['#05112e'] },
   { foreground: ['#2cf22c'], background: ['#1d2edb'] },
   { foreground: ['#e9a965'], background: ['#2cf22c'] },
+  { foreground: ['#9ea356'], background: ['#072658'] },
   { foreground: ['#8ba270'], background: ['#0c0d26'] },
+  { foreground: ['#4292f4'], background: ['#2b243f'] },
+  { foreground: ['#396dc6'], background: ['#d7fecd'] },
+  { foreground: ['#b17375'], background: ['#070456'] },
+  { foreground: ['#28d3ae'], background: ['#2f0e03'] },
+  { foreground: ['#1190c8'], background: ['#1b0606'] },
+  { foreground: ['#b5dbc8'], background: ['#6c01a3'] },
+  { foreground: ['#f9733f'], background: ['#112739'] },
+  { foreground: ['#e82f0f'], background: ['#0f0508'] },
 ]
 
 theme.reversePalette = reversePalette(theme.palette)

@@ -1,6 +1,6 @@
 export const initialState = {
   current: {
-    response: '',
+    response: 'Pensa ad una domanda... Poi chiedi all\'oracolo',
   },
   availableResponses: [
     'I segnali indicano sì.',

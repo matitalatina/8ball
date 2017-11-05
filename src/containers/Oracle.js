@@ -27,7 +27,12 @@ const mergeProps = (stateProps, { dispatch }, ownProps) => ({
   ...ownProps,
   onAnswer: () => {
     dispatch(oracleAnswer({ response: sample(stateProps.availableResponses) }))
-    dispatch(themeChangeAccent({ ...sample(stateProps.availableAccents) }))
+    let sampledAccent = { ...sample(stateProps.availableAccents) }
+    const swap = sample([true, false])
+    if (swap) {
+      sampledAccent = (({ foreground, background }) => ({ foreground: background, background: foreground }))(sampledAccent)
+    }
+    dispatch(themeChangeAccent({ ...sampledAccent }))
   },
 })
 

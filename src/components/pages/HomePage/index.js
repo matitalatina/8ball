@@ -1,6 +1,6 @@
 // https://github.com/diegohaz/arc/wiki/Atomic-Design
 import React from 'react'
-import { PageTemplate, Small, Link } from 'components'
+import { PageTemplate, Small, Link, ParticlesBackground } from 'components'
 import { Oracle } from 'containers'
 
 const HomePage = () => {
@@ -14,6 +14,7 @@ const HomePage = () => {
       }
       contentCentered
     >
+      <ParticlesBackground />
       <Oracle />
     </PageTemplate>
   )

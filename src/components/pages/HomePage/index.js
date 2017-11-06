@@ -1,13 +1,17 @@
 // https://github.com/diegohaz/arc/wiki/Atomic-Design
 import React from 'react'
-import { PageTemplate } from 'components'
+import { PageTemplate, Small, Link } from 'components'
 import { Oracle } from 'containers'
 
 const HomePage = () => {
   return (
     <PageTemplate
       header={null}
-      footer={null}
+      footer={
+        <Small transparent centered>
+          Made with <span role="img" aria-label="Heart" aria-labelledby="">❤️</span> by <Link href="https://www.mattianatali.it" target="_blank">Mattia Natali</Link> · <Link href="https://www.mattianatali.it" target="_blank">Source Code</Link>
+        </Small>
+      }
       contentCentered
     >
       <Oracle />

@@ -42,7 +42,11 @@ const ContentCentered = Content.extend`
 `
 
 const Footer = styled.footer`
-  margin-top: auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 `
 
 const PageTemplate = ({

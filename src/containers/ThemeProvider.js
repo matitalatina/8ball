@@ -5,7 +5,6 @@ import { fromTheme } from 'store/selectors'
 import { ThemeProvider } from 'styled-components'
 
 const ThemeProviderContainer = ({ children, theme }) => {
-  console.log(theme);
   return (
     <ThemeProvider theme={theme}>
       {children}
@@ -18,11 +17,8 @@ ThemeProviderContainer.propTypes = {
   theme: PropTypes.object,
 }
 
-const mapStateToProps = state => {
-  console.log(state)
-  return ({
-    theme: fromTheme.get(state),
-  })
-}
+const mapStateToProps = state => ({
+  theme: fromTheme.get(state),
+})
 
 export default connect(mapStateToProps, null, null)(ThemeProviderContainer)

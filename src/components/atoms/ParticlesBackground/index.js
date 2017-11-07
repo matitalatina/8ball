@@ -2,7 +2,7 @@ import Particles from 'react-particles-js'
 import styled from 'styled-components'
 import React from 'react'
 
-const Wrapper = styled.div`
+const StyledParticles = styled(Particles) `
   pointer-events: none;
   position: fixed;
   top: 0;
@@ -11,9 +11,9 @@ const Wrapper = styled.div`
   right: 0;
 `
 
-const ParticlesBackground = () =>
-  (<Wrapper>
-    <Particles params={{
+const ParticlesBackground = () => (
+  <StyledParticles
+    params={{
       particles: {
         number: {
           value: 40,
@@ -41,12 +41,12 @@ const ParticlesBackground = () =>
           },
         },
         opacity: {
-          value: 0.5,
+          value: 0.4,
           random: false,
           anim: {
-            enable: false,
+            enable: true,
             speed: 1,
-            opacity_min: 0.1,
+            opacity_min: 0.2,
             sync: false,
           },
         },
@@ -123,7 +123,7 @@ const ParticlesBackground = () =>
       },
       retina_detect: true,
     }}
-    />
-  </Wrapper>)
+  />
+)
 
 export default ParticlesBackground

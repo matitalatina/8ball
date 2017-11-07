@@ -6,6 +6,7 @@ const Wow = Span.extend`
   font-family: ${font('primary')};
   color: ${props => props.reverse ? palette('background', 0) : palette('foreground', 0)};
   font-size: ${key('fonts.sizes.big')};
+  text-align: center;
 `
 
 Wow.propTypes = {

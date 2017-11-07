@@ -34,7 +34,7 @@ theme.availableAccents = [
   { foreground: ['#7108e9'], background: ['#48f7d0'] },
   { foreground: ['#03a0b8'], background: ['#05112e'] },
   { foreground: ['#2cf22c'], background: ['#1d2edb'] },
-  { foreground: ['#e9a965'], background: ['#2cf22c'] },
+  { foreground: ['#aa0305'], background: ['#2ff9cb'] },
   { foreground: ['#9ea356'], background: ['#072658'] },
   { foreground: ['#8ba270'], background: ['#0c0d26'] },
   { foreground: ['#4292f4'], background: ['#2b243f'] },

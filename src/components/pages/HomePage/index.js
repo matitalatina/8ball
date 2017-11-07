@@ -12,6 +12,7 @@ const HomePage = () => {
           Made with <span role="img" aria-label="Heart" aria-labelledby="">❤️</span> by <Link href="https://www.mattianatali.it" target="_blank">Mattia Natali</Link> · <Link href="https://www.mattianatali.it" target="_blank">Source Code</Link>
         </Small>
       }
+      footerAbsolute
       contentCentered
     >
       <ParticlesBackground />

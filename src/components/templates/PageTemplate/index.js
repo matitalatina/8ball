@@ -47,10 +47,16 @@ const Footer = styled.footer`
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  ${({ absolute }) => absolute ? `
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  ` : ''}
 `
 
 const PageTemplate = ({
-  header, hero, sponsor, children, footer, contentCentered = false, ...props
+  header, hero, sponsor, children, footer, footerAbsolute, contentCentered = false, ...props
 }) => {
   return (
     <Wrapper {...props}>
@@ -58,7 +64,7 @@ const PageTemplate = ({
       {hero && <Hero>{hero}</Hero>}
       {sponsor && <Sponsor>{sponsor}</Sponsor>}
       {contentCentered ? <ContentCentered>{children}</ContentCentered> : <Content>{children}</Content>}
-      {footer && <Footer>{footer}</Footer>}
+      {footer && <Footer absolute={footerAbsolute}>{footer}</Footer>}
     </Wrapper>
   )
 }
@@ -70,6 +76,7 @@ PageTemplate.propTypes = {
   footer: PropTypes.node,
   children: PropTypes.any.isRequired,
   contentCentered: PropTypes.bool,
+  footerAbsolute: PropTypes.bool,
 }
 
 export default PageTemplate

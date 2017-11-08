@@ -9,7 +9,7 @@ const HomePage = () => {
       header={null}
       footer={
         <Small transparent centered>
-          Made with <span role="img" aria-label="Heart" aria-labelledby="">❤️</span> by <Link href="https://www.mattianatali.it" target="_blank">Mattia Natali</Link> · <Link href="https://www.mattianatali.it" target="_blank">Source Code</Link>
+          Made with <span role="img" aria-label="Heart" aria-labelledby="">❤️</span> by <Link href="https://www.mattianatali.it" target="_blank">Mattia Natali</Link> · <Link href="https://github.com/matitalatina/8ball" target="_blank">Source Code</Link>
         </Small>
       }
       footerAbsolute
